@@ -23,16 +23,14 @@ function validateForm(){
                     (!expressionOnlyLetters.test(inputName.value))     ? alert("Name can contain only letters"):
                     (!expressionOnlyLetters.test(inputLastName.value)) ? alert("Last Name can contain only letters"):
 
-                    (!expressionFirstLetterUppercase.test(inputName.value))     ? alert("Name should starts with a capital"):
-                    (!expressionFirstLetterUppercase.test(inputLastName.value)) ? alert("Last Name should starts with a capital"):
+                    (!expressionFirstLetterUppercase.test(inputName.value))     ? alert("Name should starts with capital"):
+                    (!expressionFirstLetterUppercase.test(inputLastName.value)) ? alert("Last Name should starts with capital"):
 
                     (!expressionEmail.test(inputEmail.value)) ? alert("Enter a valid e-mail"):
-
                     (!expressionPassword6Characters.test(inputPassword.value)) ? alert("Password should have only 6 characters"):
                     (inputPassword.value=="password" || inputPassword.value=="123456" ||inputPassword.value=="098754") ? alert("That's not a valid password"):
-                    (bicycles.value=="0") ? alert("Choose a bicycle")  :
-                    "";
-
+                    (bicycles.value=="0") ? alert("Choose a bicycle")  :"";
         })
   })
-}  validateForm();
+}
+ validateForm();
